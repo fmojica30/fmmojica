@@ -122,9 +122,9 @@ p {
     top: -10%;
   }
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (max-width: 1125px) {
   .wrapper {
-    grid-template-rows: 100px 1800px 250px 70px;
+    grid-template-rows: 100px 1500px 250px 70px;
   }
   .header {
     margin-bottom: 0;
@@ -134,6 +134,7 @@ p {
   .header .headerText h1 {
     padding-top: 10px;
     padding-bottom: 0;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-size: 250px;
   }
@@ -141,6 +142,7 @@ p {
     padding-top: 0;
     margin-top: 2px;
     font-size: 200px;
+    margin-bottom: 0px;
   }
   .nav {
     grid-template-columns: 2fr 8fr;
@@ -151,6 +153,9 @@ p {
   .nav .menu a {
     font-size: 75px;
     color: #939fad;
+  }
+  .btns {
+    margin-top: 0px;
   }
   .btns .middle .myBtns {
     display: inline-block;
