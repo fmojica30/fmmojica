@@ -4,11 +4,8 @@
 @accent1: #c51f5d;
 @textcolor: #ffffff;
 @secondaryTextColor: #939fad;
-@font: 'Staatliches', cursive;
+@font: 'Staatliches', cursive; //CSS
 
-
-
-//CSS
 * {
   background: @mainColor;
   color: @secondaryTextColor;
@@ -27,8 +24,8 @@ p {
   display: grid;
   max-width: 2048px;
   max-height: 800px;
-  margin: 0px 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   grid-template-rows: 40px 500px 160px;
   margin: auto;
 }
@@ -68,13 +65,13 @@ p {
   .headerText {
     h1 {
       padding-top: 100px;
-      padding-bottom: 0px;
+      padding-bottom: 0;
       margin-bottom: 10px;
       font-size: 75px;
     }
 
     h2 {
-      padding-top: 0px;
+      padding-top: 0;
       margin-top: 2px;
       font-size: 50px;
     }
@@ -88,7 +85,7 @@ p {
   .middle {
     grid-column-start: 2;
     grid-column-end: 3;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     align-items: center;
@@ -99,7 +96,7 @@ p {
       width: 70px;
       height: 70px;
       background: #fff;
-      margin: 0px;
+      margin: 0;
       border-radius: 30%;
       color: #3498db;
       position: relative;
@@ -129,6 +126,7 @@ p {
         left: -110%;
         top: 90%;
       }
+
       &:hover::before {
         animation: aaa 0.7s 1;
         top: -10%;
@@ -137,23 +135,31 @@ p {
     }
   }
 }
-
 @keyframes aaa {
   0% {
     left: -110%;
     top: 90%;
-  }50% {
+  }
+
+  50% {
     left: 10%;
     top: -30%;
-  }100% {
+  }
+
+  100% {
     left: -10%;
     top: -10%;
   }
-
 }
 
 .burger {
   display: none;
+  margin: 0;
+  padding: 0;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
 .burger div {
@@ -162,29 +168,30 @@ p {
   background-color: @textcolor;
   margin: 5px;
 }
-
-@media (max-width: 1220px){
+@media (max-width: 768px) {
   body {
     overflow: hidden;
   }
+
   .wrapper {
     grid-template-rows: 70px 400px 160px 70px;
   }
 
   .header {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     height: 400px;
+
     .headerText {
       h1 {
         padding-top: 10px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
         margin-bottom: 10px;
         font-size: 65px;
       }
 
       h2 {
-        padding-top: 0px;
+        padding-top: 0;
         margin-top: 2px;
         font-size: 50px;
       }
@@ -194,11 +201,11 @@ p {
   .nav {
     .menu {
       position: absolute;
-      right: 0px;
+      right: 0;
       height: 92vh;
       top: 8vh;
       width: 50%;
-      background-color: @secondaryColor ;
+      background-color: @secondaryColor;
       grid-template-rows: repeat(3, 50px);
       grid-template-columns: 1fr;
       align-items: center;
@@ -213,17 +220,12 @@ p {
     }
   }
 
+
   .burger {
     display: block;
-    margin: 0px;
-    padding: 0px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin-right: 10px;
-    margin-top: 5px;
   }
 }
 
-.menu-active {
+.nav .menu-active {
   transform: translateX(0%);
 }
