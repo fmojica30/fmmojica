@@ -13,8 +13,8 @@ p {
   display: grid;
   max-width: 2048px;
   max-height: 800px;
-  margin: 0px 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   grid-template-rows: 40px 500px 160px;
   margin: auto;
 }
@@ -48,12 +48,12 @@ p {
 }
 .header .headerText h1 {
   padding-top: 100px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin-bottom: 10px;
   font-size: 75px;
 }
 .header .headerText h2 {
-  padding-top: 0px;
+  padding-top: 0;
   margin-top: 2px;
   font-size: 50px;
 }
@@ -75,7 +75,7 @@ p {
   width: 70px;
   height: 70px;
   background: #fff;
-  margin: 0px;
+  margin: 0;
   border-radius: 30%;
   color: #3498db;
   position: relative;
@@ -124,6 +124,12 @@ p {
 }
 .burger {
   display: none;
+  margin: 0;
+  padding: 0;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 .burger div {
   width: 25px;
@@ -131,7 +137,7 @@ p {
   background-color: #ffffff;
   margin: 5px;
 }
-@media (max-width: 1220px) {
+@media (max-width: 768px) {
   body {
     overflow: hidden;
   }
@@ -139,24 +145,24 @@ p {
     grid-template-rows: 70px 400px 160px 70px;
   }
   .header {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     height: 400px;
   }
   .header .headerText h1 {
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-bottom: 10px;
     font-size: 65px;
   }
   .header .headerText h2 {
-    padding-top: 0px;
+    padding-top: 0;
     margin-top: 2px;
     font-size: 50px;
   }
   .nav .menu {
     position: absolute;
-    right: 0px;
+    right: 0;
     height: 92vh;
     top: 8vh;
     width: 50%;
@@ -174,14 +180,8 @@ p {
   }
   .burger {
     display: block;
-    margin: 0px;
-    padding: 0px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    margin-right: 10px;
-    margin-top: 5px;
   }
 }
-.menu-active {
+.nav .menu-active {
   transform: translateX(0%);
 }
