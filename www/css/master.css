@@ -167,11 +167,11 @@ p {
     color: #f1f1f1;
   }
   .btns .middle .myBtns i {
-    line-height: 180px;
-    font-size: 180px;
+    line-height: 150px;
+    font-size: 150px;
     background: transparent;
     transition: 0.2s linear;
-    padding-top: 35px;
+    padding-top: 45px;
   }
   .btns .middle .myBtns::before {
     content: "";
