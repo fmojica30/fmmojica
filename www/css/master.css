@@ -123,6 +123,7 @@ p {
     top: -10%;
   }
 }
+
 @media only screen and (max-width: 640px) {
   .wrapper {
     grid-template-rows: 80px 400px 160px;
@@ -147,6 +148,7 @@ p {
     font-size: 40px;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .wrapper {
     grid-template-rows: 80px 400px 160px;
@@ -162,5 +164,6 @@ p {
     margin-top: 2px;
     margin-bottom: 30px;
     font-size: 40px;
+    
   }
 }
