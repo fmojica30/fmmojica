@@ -44,6 +44,9 @@ p {
 .menu a:hover {
   color: #626971;
 }
+.projBtn {
+  border: none;
+}
 .header {
   display: grid;
   text-align: center;
