@@ -1,0 +1,77 @@
+// Variables
+@background-end: linear-gradient(to left, #e91e63, #3f51b5);
+@background-helper: #fff;
+@background-inside: rgba(98, 98, 98, .4);
+@text-color: #ddd41a;
+@button-hover: rgba(98, 98, 98, .7);
+
+// Mix-Ins
+.content {
+  background: @background-inside;
+  color: @text-color;
+  border: none;
+  font-size: 30px;
+  border-radius: 7px;
+}
+
+
+/////////////////////
+* {
+  font-family: verdana;
+}
+
+body {
+  background: @background-end;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.inputText {
+  display: block;
+  .content;
+  p {
+    color: @text-color;
+    text-align: center;
+    font-size: 55px;
+    margin: 1px;
+    padding: 1px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: 500px;
+  width: 300px;
+  margin-top: 5%;
+  grid-gap: 10px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100%;
+  width: 100%;
+  grid-gap: 3px;
+}
+
+button {
+  background: @background-inside;
+  color: @text-color;
+  border: none;
+  font-size: 30px;
+  border-radius: 7px;
+
+  &:hover {
+    background: @button-hover;
+  }
+
+  &:active {
+    background: @background-inside;
+  }
+}
