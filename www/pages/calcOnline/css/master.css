@@ -61,3 +61,8 @@ button:hover {
 button:active {
   background: rgba(98, 98, 98, 0.4);
 }
+@media (max-width: 640px) {
+  .grid {
+    width: 250px;
+  }
+}
