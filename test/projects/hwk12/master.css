@@ -1,0 +1,8 @@
+.wrapper {
+  display: grid;
+  margin: auto;
+}
+
+table {
+  border: 3px black;
+}
